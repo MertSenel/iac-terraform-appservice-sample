@@ -4,11 +4,12 @@
 # https://aka.ms/yaml
 
 trigger:
-- dev
+- master
 
 pool:
   vmImage: 'Hosted VS2017'
 
+steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
