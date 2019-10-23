@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Hosted VS2017'
+  vmImage: 'windows-latest'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -15,4 +15,28 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
     feedsToUse: 'select'
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/*[Tt]ests/*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'Terraform'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)/Terraform'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
