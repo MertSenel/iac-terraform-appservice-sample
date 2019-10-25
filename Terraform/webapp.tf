@@ -8,8 +8,8 @@
 	}
 	}
 resource "azurerm_resource_group" "dev" {
-  name     = "PULTerraform"
-  location = "West Europe"
+  name     = "__appservicerg__"
+  location = "Australia East"
 }
 
 resource "azurerm_app_service_plan" "dev" {
@@ -29,4 +29,11 @@ resource "azurerm_app_service" "dev" {
   resource_group_name = "${azurerm_resource_group.dev.name}"
   app_service_plan_id = "${azurerm_app_service_plan.dev.id}"
 
+}
+
+resource "azurerm_application_insights" "dev" {
+  name                = "__appservicename__-appinsights"
+  location            = "${azurerm_resource_group.dev.location}"
+  resource_group_name = "${azurerm_resource_group.dev.name}"
+  application_type    = "web"
 }
