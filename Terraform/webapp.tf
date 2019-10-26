@@ -18,8 +18,8 @@ resource "azurerm_app_service_plan" "dev" {
   resource_group_name = "${azurerm_resource_group.dev.name}"
 
   sku {
-    tier = "Shared"
-    size = "D1"
+    tier = "Free"
+    size = "F1"
   }
 }
 
