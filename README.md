@@ -23,10 +23,10 @@ https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples/_release
 - Added Application Insights resource to the Terraform code to enable Contious Monitoring for the project. 
 
 ## Azure DevOps Pipelines:
-### Contious Integration
+### Continous Integration
 - Converted GUI based Build Pipeline to YAML based build pipeline so it can be maintained with the project repository.
 - Build triggers configured to target push and Pull Request CI builds in order to use as status checks for safe contribution, adhering to Git flow. 
-### Contious Deployment
+### Continous Deployment
 - Enabled Continous Deployment for both Pull Request and Push(to master and release branches) to Dev environment. 
   - This environment and Release stage can later be used to run integration tests before promoting deployment to higher stages.  
 - Added Continous Monitoring to the App Service via Application Insights with Release Pipeline task
