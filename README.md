@@ -12,6 +12,10 @@ https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples
 The original source code repository used for this project can be found at: https://github.com/Microsoft/PartsUnlimited
 
 The Initial CI/CD Structure was adopted from below Azure DevOps Lab: https://github.com/Microsoft/azuredevopslabs/tree/master/labs/vstsextend/terraform/
+## Builds
+https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples/_build
+## Releases
+https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples/_release
 
 # Improvements/Additions:
 
