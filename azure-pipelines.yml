@@ -30,7 +30,7 @@ steps:
   displayName: DotNetCore Run Tests
   inputs:
     command: 'test'
-    projects: '**/*[Tt]ests/*.csproj'
+    projects: '**/*[Tt]est/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
   displayName: DotNetCore Publish Project
