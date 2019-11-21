@@ -20,7 +20,7 @@ https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples/_release
 # Improvements/Additions:
 
 ## Project:
-- Added Application Insights resource to the Terraform code to enable Contious Monitoring for the project. 
+- Added Application Insights resource to the Terraform code to enable Continous Monitoring for the project. 
 
 ## Azure DevOps Pipelines:
 ### Continous Integration
