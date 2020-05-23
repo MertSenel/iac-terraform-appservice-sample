@@ -4,6 +4,8 @@
 
 ## CI/CD Sample using DotNET Core and Terraform with Azure AppServices
 
+![Alt text](README-Resources/featured.png?raw=true "IaC-Terraform-Appservice-Sample")
+
 ### Azure DevOps Project: 
 https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples
 
