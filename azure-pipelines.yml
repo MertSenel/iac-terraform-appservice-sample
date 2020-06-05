@@ -28,6 +28,7 @@ steps:
     arguments: '--configuration $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
   displayName: DotNetCore Run Tests
+  condition: and(succeeded(), eq(variables['runTests'], 'true'))
   inputs:
     command: 'test'
     projects: '**/*[Tt]ests/*.csproj'
