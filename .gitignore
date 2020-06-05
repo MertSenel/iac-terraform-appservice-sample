@@ -8,3 +8,5 @@ src/*/obj/*
 src/*/bin/*
 test/*/obj/*
 test/*/bin/*
+Terraform/.terraform
+Terraform/crash.log
