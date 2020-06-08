@@ -2,7 +2,7 @@
 
 [![Build Status](https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples/_apis/build/status/MertSenel.iac-terraform-appservice-sample?branchName=master)](https://dev.azure.com/mertsenel/Infrastructure-as-Code-Samples/_build/latest?definitionId=2&branchName=master) [![Deployment Status](https://vsrm.dev.azure.com/mertsenel/_apis/public/Release/badge/2bffee41-9bcd-41f2-a297-352aba60e0dd/1/1)](https://vsrm.dev.azure.com/mertsenel/_apis/public/Release/badge/2bffee41-9bcd-41f2-a297-352aba60e0dd/1/1) 
 
-## CI/CD Sample using DotNET Core and Terraform with Azure AppServices
+## CI/CD Sample using .NET Core and Terraform with Azure AppServices
 
 ![Alt text](README-Resources/featured.png?raw=true "IaC-Terraform-Appservice-Sample")
 
