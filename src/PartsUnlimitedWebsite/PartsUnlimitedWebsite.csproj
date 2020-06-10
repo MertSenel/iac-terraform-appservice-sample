@@ -10,7 +10,7 @@
 
   <ItemGroup>	
 	<PackageReference Include="LaunchDarkly.Client" Version="5.4.0" />	
-	<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />	
+	<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />	
 	<PackageReference Include="Microsoft.DotNet.InternalAbstractions" Version="1.0.500-preview2-1-003177" />	
 
  </ItemGroup>
