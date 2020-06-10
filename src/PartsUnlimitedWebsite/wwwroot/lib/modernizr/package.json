@@ -10,7 +10,7 @@
     "file": "0.2.2",
     "find-parent-dir": "0.3.0",
     "lodash": "4.0.0",
-    "marked": "0.3.5",
+    "marked": "1.1.0",
     "mkdirp": "0.5.1",
     "requirejs": "2.1.22",
     "yargs": "3.31.0"
